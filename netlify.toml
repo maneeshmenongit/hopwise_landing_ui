@@ -1,0 +1,11 @@
+[build]
+  # Publish directory (where the site files are located)
+  publish = "site"
+
+  # No build command needed for static site
+  command = ""
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
