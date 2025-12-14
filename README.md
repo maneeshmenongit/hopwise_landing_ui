@@ -9,9 +9,9 @@ hopwise_landing_page/
 ├── site/                  # Website source code
 │   ├── index.html        # Main HTML file
 │   ├── css/              # Stylesheets
-│   │   └── styles.css
+│   │   └── style.css
 │   └── js/               # JavaScript files
-│       └── main.js
+│       └── script.js
 ├── assets/               # Static assets
 │   ├── images/          # Image files
 │   ├── videos/          # Video files
