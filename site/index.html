@@ -1,297 +1,138 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Hopwise — Every stop matters. Hop smarter!</title>
-    <meta
-      name="description"
-      content="Hopwise helps travelers compare rides, dining, activities, and stays — all in one AI-powered travel assistant."
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hopwise — Everything you need, one app</title>
+  <meta name="description" content="One app. Every decision. Smarter travel." />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-    <!-- Keep it simple + fast (no frameworks) -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+<body>
+<header class="header">
+  <div class="container header__inner">
+    <div class="brand">
+  <img
+    src="./assets/brand/hopwise-logo.png"
+    alt="Hopwise"
+    class="brand__logo"
+  />
+</div>
+    <a href="#waitlist" class="btn btn--primary">Join waitlist</a>
+  </div>
+</header>
 
-  <body>
-    <!-- HEADER -->
-    <header class="header" id="top">
-      <div class="container header__inner">
-        <a class="brand" href="#top" aria-label="Hopwise home">
-          <span class="brand__icon" aria-hidden="true">🌍</span>
-          <span class="brand__name">Hopwise</span>
-        </a>
+<main>
 
-        <nav class="nav" aria-label="Primary navigation">
-          <button
-            class="nav__toggle"
-            id="navToggle"
-            aria-controls="navMenu"
-            aria-expanded="false"
-            type="button"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="hamburger" aria-hidden="true"></span>
-          </button>
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero__inner">
+    <h1>Everything you need, one app</h1>
+    <p class="hero__tagline">One app. Every decision. Smarter.</p>
+    <p class="hero__sub">Four domains. Endless possibilities. Plan smarter, travel better.</p>
 
-          <div class="nav__menu" id="navMenu">
-            <a class="nav__link" href="#how">How it works</a>
-            <a class="nav__link" href="#domains">Domains</a>
-            <a class="nav__link" href="#why">Why Hopwise</a>
-            <a class="nav__link" href="#waitlist">Join Waitlist</a>
-            <a class="btn btn--primary nav__cta" href="#waitlist">Join Waitlist</a>
-          </div>
-        </nav>
+    <a href="#waitlist" class="btn btn--primary btn--lg">Join the waitlist</a>
+
+    <div class="signal">
+      <span>12+ integrations</span>
+      <span>•</span>
+      <span>4 domains</span>
+      <span>•</span>
+      <span>One intelligent experience</span>
+    </div>
+  </div>
+</section>
+
+<!-- DOMAINS -->
+<section class="section">
+  <div class="container">
+    <div class="domains-grid">
+
+      <div class="domain-card">
+        <img src="./assets/domains/rides.png" alt="Rides" />
+        <div class="domain-card__body">
+          <h3>Rides</h3>
+          <p>Uber vs Lyft, instantly</p>
+        </div>
       </div>
-    </header>
 
-    <main>
-      <!-- HERO -->
-      <section class="hero">
-        <div class="container hero__grid">
-          <div class="hero__copy">
-            <div class="pill">AI-powered travel decision assistant</div>
-
-            <h1 class="hero__title">
-              Every stop matters. <span class="text-gradient">Hop smarter!</span>
-            </h1>
-
-            <p class="hero__sub">
-              Compare rides, dining, activities, and stays — all in one place. Get a clear “smart pick” without
-              bouncing between apps.
-            </p>
-
-            <div class="hero__actions">
-              <a class="btn btn--primary" href="#waitlist">Join the waitlist</a>
-              <a class="btn btn--ghost" href="#how">See how it works</a>
-            </div>
-
-            <div class="micro">
-              <span class="micro__dot" aria-hidden="true"></span>
-              <span>Unbiased comparisons • No hidden markups • Built for travelers</span>
-            </div>
-          </div>
-
-          <div class="hero__visual" aria-label="Hero placeholder">
-            <div class="placeholder placeholder--hero">
-              <div class="placeholder__title">Hero visual placeholder</div>
-              <div class="placeholder__sub">Drop your Gemini hero image later (no code changes needed)</div>
-            </div>
-
-            <div class="kpis" aria-hidden="true">
-              <div class="kpi">
-                <div class="kpi__num">4</div>
-                <div class="kpi__label">domains</div>
-              </div>
-              <div class="kpi">
-                <div class="kpi__num">1</div>
-                <div class="kpi__label">smart pick</div>
-              </div>
-              <div class="kpi">
-                <div class="kpi__num">0</div>
-                <div class="kpi__label">bias</div>
-              </div>
-            </div>
-          </div>
+      <div class="domain-card">
+        <img src="./assets/domains/dining.png" alt="Dining" />
+        <div class="domain-card__body">
+          <h3>Dining</h3>
+          <p>Worth it, nearby</p>
         </div>
-      </section>
-
-      <!-- PROBLEM -> SOLUTION -->
-      <section class="section" id="why">
-        <div class="container">
-          <div class="section__head">
-            <h2>Travel decisions shouldn’t feel like work.</h2>
-            <p>Hopwise reduces decision fatigue with clear comparisons and a single recommendation.</p>
-          </div>
-
-          <div class="split">
-            <div class="panel">
-              <h3 class="panel__title">The problem</h3>
-              <ul class="list">
-                <li>Switching between Uber, Lyft, Yelp, Google, tours…</li>
-                <li>Too many options, no clear “best choice”</li>
-                <li>Decision fatigue in unfamiliar cities</li>
-              </ul>
-            </div>
-
-            <div class="panel panel--accent">
-              <h3 class="panel__title">The Hopwise way</h3>
-              <ul class="list">
-                <li>One search</li>
-                <li>All options compared side-by-side</li>
-                <li>One smart pick with a quick “why”</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- HOW IT WORKS -->
-      <section class="section section--alt" id="how">
-        <div class="container">
-          <div class="section__head">
-            <h2>How it works</h2>
-            <p>Smart defaults first. Details only when you want them.</p>
-          </div>
-
-          <div class="steps" id="steps">
-            <div class="step" tabindex="0" data-step="1">
-              <div class="step__num">1</div>
-              <div class="step__body">
-                <div class="step__title">Enter a destination</div>
-                <div class="step__sub">Airport, restaurant, neighborhood — anything.</div>
-              </div>
-            </div>
-
-            <div class="step" tabindex="0" data-step="2">
-              <div class="step__num">2</div>
-              <div class="step__body">
-                <div class="step__title">See all options</div>
-                <div class="step__sub">Normalized comparisons: price, ETA, rating, distance.</div>
-              </div>
-            </div>
-
-            <div class="step" tabindex="0" data-step="3">
-              <div class="step__num">3</div>
-              <div class="step__body">
-                <div class="step__title">Get the smart pick</div>
-                <div class="step__sub">A recommendation + short rationale.</div>
-              </div>
-            </div>
-
-            <div class="step" tabindex="0" data-step="4">
-              <div class="step__num">4</div>
-              <div class="step__body">
-                <div class="step__title">Book with confidence</div>
-                <div class="step__sub">Link out now, deeper integrations later.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- DOMAINS -->
-      <section class="section" id="domains">
-        <div class="container">
-          <div class="section__head">
-            <h2>One app. Four travel decisions.</h2>
-            <p>Multi-domain comparisons are the moat — rides first, then expand.</p>
-          </div>
-
-          <div class="cards cards--2">
-            <article class="card">
-              <div class="card__icon">🚗</div>
-              <h3 class="card__title">Rides</h3>
-              <p class="card__text">Uber vs Lyft, instantly — price + ETA + surge awareness.</p>
-            </article>
-
-            <article class="card">
-              <div class="card__icon">🍽️</div>
-              <h3 class="card__title">Dining</h3>
-              <p class="card__text">Good food nearby — quick filters, tourist-friendly picks.</p>
-            </article>
-
-            <article class="card">
-              <div class="card__icon">🎡</div>
-              <h3 class="card__title">Activities</h3>
-              <p class="card__text">Compare experiences across platforms and surface the best value.</p>
-            </article>
-
-            <article class="card">
-              <div class="card__icon">🏨</div>
-              <h3 class="card__title">Stays</h3>
-              <p class="card__text">Fair prices, better neighborhoods — fees included, clearer tradeoffs.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- TRUST / DIFFERENTIATION -->
-      <section class="section section--alt">
-        <div class="container">
-          <div class="quote">
-            <h2 class="quote__title">Unbiased by design</h2>
-            <p class="quote__text">
-              Hopwise doesn’t push the most expensive option. We show the smartest one — with transparent comparisons.
-            </p>
-
-            <div class="bullets">
-              <div class="bullet">✅ Unbiased comparisons</div>
-              <div class="bullet">✅ No hidden markups</div>
-              <div class="bullet">✅ Built for tourists</div>
-              <div class="bullet">✅ “Why this pick” explanations</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PRODUCT PREVIEW -->
-      <section class="section">
-        <div class="container">
-          <div class="section__head">
-            <h2>Product preview</h2>
-            <p>This is what smarter travel decisions look like.</p>
-          </div>
-
-          <div class="preview">
-            <div class="placeholder placeholder--preview">
-              <div class="placeholder__title">App screenshot placeholder</div>
-              <div class="placeholder__sub">Later: drop your UI screenshot here (keep layout stable)</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- WAITLIST -->
-      <section class="section section--alt" id="waitlist">
-        <div class="container">
-          <div class="waitlist">
-            <div class="waitlist__copy">
-              <h2>Be first to hop smarter ✨</h2>
-              <p>Early access updates. No spam. Just smarter travel.</p>
-              <div class="note">Tip: we can wire this to Formspree or your backend in one small JS change.</div>
-            </div>
-
-            <form class="waitlist__form" id="waitlistForm" novalidate>
-              <label class="sr-only" for="email">Email address</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                inputmode="email"
-                autocomplete="email"
-                placeholder="you@example.com"
-                required
-              />
-              <button class="btn btn--primary" type="submit">Join Waitlist</button>
-              <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container footer__inner">
-        <div class="footer__brand">
-          <div class="brand brand--small">
-            <span class="brand__icon" aria-hidden="true">🌍</span>
-            <span class="brand__name">Hopwise</span>
-          </div>
-          <div class="footer__tagline">Every stop matters. Hop smarter!</div>
-        </div>
-
-        <div class="footer__links">
-          <a href="#" class="footer__link">Privacy</a>
-          <a href="#" class="footer__link">Terms</a>
-          <a href="mailto:hello@hopwise.app" class="footer__link">Contact</a>
-        </div>
-
-        <div class="footer__copy">© <span id="year"></span> Hopwise</div>
       </div>
-    </footer>
 
-    <script src="./js/script.js" defer></script>
-  </body>
+      <div class="domain-card">
+        <img src="./assets/domains/activities.png" alt="Activities" />
+        <div class="domain-card__body">
+          <h3>Activities</h3>
+          <p>Best value experiences</p>
+        </div>
+      </div>
+
+      <div class="domain-card">
+        <img src="./assets/domains/stays.png" alt="Stays" />
+        <div class="domain-card__body">
+          <h3>Stays</h3>
+          <p>Fair prices, better areas</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PRODUCT PREVIEW -->
+<section class="section section--soft">
+  <div class="container">
+    <h2 class="center">This is what smarter travel looks like</h2>
+    <div class="preview">
+      <div class="placeholder">
+        App preview placeholder<br />
+        <small>(Drop screenshot later)</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="container">
+    <div class="how">
+      <span>Search</span>
+      <span>→</span>
+      <span>Compare</span>
+      <span>→</span>
+      <span>Smart Pick</span>
+      <span>→</span>
+      <span>Book</span>
+    </div>
+  </div>
+</section>
+
+<!-- WAITLIST -->
+<section class="section section--soft" id="waitlist">
+  <div class="container waitlist">
+    <h2>Be first to hop smarter ✨</h2>
+    <p>No spam. Just smarter travel.</p>
+
+    <form id="waitlistForm">
+      <input type="email" id="email" placeholder="you@example.com" required />
+      <button class="btn btn--primary">Join waitlist</button>
+      <div class="form-msg" id="formMsg"></div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  © <span id="year"></span> Hopwise
+</footer>
+
+<script src="./js/script.js"></script>
+</body>
 </html>
