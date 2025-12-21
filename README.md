@@ -10,12 +10,14 @@ hopwise_landing_page/
 │   ├── index.html        # Main HTML file
 │   ├── css/              # Stylesheets
 │   │   └── style.css
-│   └── js/               # JavaScript files
-│       └── script.js
-├── assets/               # Static assets
-│   ├── images/          # Image files
-│   ├── videos/          # Video files
-│   └── fonts/           # Custom fonts
+│   ├── js/               # JavaScript files
+│   │   └── script.js
+│   └── assets/           # Static assets
+│       ├── brand/        # Brand logos
+│       ├── domains/      # Domain images
+│       ├── images/       # Image files
+│       ├── videos/       # Video files
+│       └── fonts/        # Custom fonts
 ├── .gitignore           # Git ignore rules
 ├── .env.example         # Environment variables template
 └── README.md            # This file
@@ -55,7 +57,9 @@ This is a static site and can be deployed to any static hosting service:
 
 ## Assets
 
-Place your marketing assets in the `assets/` directory:
-- **images/**: Logos, hero images, screenshots, etc.
+Place your marketing assets in the `site/assets/` directory:
+- **brand/**: Brand logos and identity assets
+- **domains/**: Domain-specific images (rides, dining, activities, stays)
+- **images/**: General images, hero images, screenshots, etc.
 - **videos/**: Product demos, promotional videos
 - **fonts/**: Custom web fonts
