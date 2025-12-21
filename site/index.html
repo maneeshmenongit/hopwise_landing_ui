@@ -1,138 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hopwise — Everything you need, one app</title>
-  <meta name="description" content="One app. Every decision. Smarter travel." />
-  <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hopwise — Every stop matters. Hop smarter!</title>
+    <meta name="description" content="One app. Every decision. Smarter travel. Compare rides, discover great food, explore activities, and find the perfect stay.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/brand/hopwise-logo.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-<header class="header">
-  <div class="container header__inner">
-    <div class="brand">
-  <img
-    src="/assets/brand/hopwise-logo.png"
-    alt="Hopwise"
-    class="brand__logo"
-  />
-</div>
-    <a href="#waitlist" class="btn btn--primary">Join waitlist</a>
-  </div>
-</header>
 
-<main>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="container hero__inner">
-    <h1>Everything you need, one app</h1>
-    <p class="hero__tagline">One app. Every decision. Smarter.</p>
-    <p class="hero__sub">Four domains. Endless possibilities. Plan smarter, travel better.</p>
-
-    <a href="#waitlist" class="btn btn--primary btn--lg">Join the waitlist</a>
-
-    <div class="signal">
-      <span>12+ integrations</span>
-      <span>•</span>
-      <span>4 domains</span>
-      <span>•</span>
-      <span>One intelligent experience</span>
-    </div>
-  </div>
-</section>
-
-<!-- DOMAINS -->
-<section class="section">
-  <div class="container">
-    <div class="domains-grid">
-
-      <div class="domain-card">
-        <img src="/assets/domains/rides.png" alt="Rides" />
-        <div class="domain-card__body">
-          <h3>Rides</h3>
-          <p>Uber vs Lyft, instantly</p>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="header-brand">
+                <img src="./assets/brand/hopwise-logo.png" alt="Hopwise">
+                <span>Hopwise</span>
+            </div>
+            <a href="#ready" class="btn primary">Join waitlist</a>
         </div>
-      </div>
+    </header>
 
-      <div class="domain-card">
-        <img src="/assets/domains/dining.png" alt="Dining" />
-        <div class="domain-card__body">
-          <h3>Dining</h3>
-          <p>Worth it, nearby</p>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        
+        <div class="hero-brand">
+            <img src="./assets/brand/hopwise-logo-cropped.png" alt="Hopwise">
         </div>
-      </div>
-
-      <div class="domain-card">
-        <img src="/assets/domains/activities.png" alt="Activities" />
-        <div class="domain-card__body">
-          <h3>Activities</h3>
-          <p>Best value experiences</p>
+        
+        <div class="container hero-content">
+            <h1>Every stop matters.<br><span>Hop smarter!</span></h1>
+            
+            <p class="hero-sub">
+                Compare rides, discover great food, explore activities, and find the perfect stay —
+                all in one intelligent travel companion.
+            </p>
+            
+            <a href="#ready" class="btn primary large">Join the waitlist</a>
+            
+            <div class="signals">
+                <span>12+ integrations</span>
+                <span>•</span>
+                <span>4 domains</span>
+                <span>•</span>
+                <span>One intelligent experience</span>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="domain-card">
-        <img src="/assets/domains/stays.png" alt="Stays" />
-        <div class="domain-card__body">
-          <h3>Stays</h3>
-          <p>Fair prices, better areas</p>
+    <!-- DOMAINS -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2>Everything you need. One app.</h2>
+                <p>Four domains. Endless possibilities. Plan smarter, travel better.</p>
+            </div>
+
+            <div class="domains-grid">
+                <div class="domain-card">
+                    <img src="./assets/domains/rides.png" alt="Rides">
+                    <div class="domain-overlay">
+                        <h3>Rides</h3>
+                        <p>Uber vs Lyft, instantly</p>
+                    </div>
+                </div>
+
+                <div class="domain-card">
+                    <img src="./assets/domains/dining.png" alt="Dining">
+                    <div class="domain-overlay">
+                        <h3>Dining</h3>
+                        <p>Worth it, nearby</p>
+                    </div>
+                </div>
+
+                <div class="domain-card">
+                    <img src="./assets/domains/activities.png" alt="Activities">
+                    <div class="domain-overlay">
+                        <h3>Activities</h3>
+                        <p>Best value experiences</p>
+                    </div>
+                </div>
+
+                <div class="domain-card">
+                    <img src="./assets/domains/stays.png" alt="Stays">
+                    <div class="domain-overlay">
+                        <h3>Stays</h3>
+                        <p>Fair prices, better areas</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <!-- WHY SECTION -->
+    <section class="why-section">
+        <div class="container why-content">
+            <div class="why-left">
+                <h2>One app.<br>Every decision.<br><span>Smarter.</span></h2>
+                <p>
+                    Hopwise brings all your travel decisions together — so you spend less time choosing
+                    and more time enjoying the journey.
+                </p>
+            </div>
+            
+            <div class="why-points">
+                <div class="why-point">
+                    <span class="number">01.</span>
+                    <div class="content">
+                        <h4>AI-Powered Recommendations</h4>
+                        <p>Smart suggestions based on your preferences, budget, and real-time conditions.</p>
+                    </div>
+                </div>
+                
+                <div class="why-point">
+                    <span class="number">02.</span>
+                    <div class="content">
+                        <h4>Real-Time Comparisons</h4>
+                        <p>Instantly compare prices across Uber, Lyft, restaurants, and more.</p>
+                    </div>
+                </div>
+                
+                <div class="why-point">
+                    <span class="number">03.</span>
+                    <div class="content">
+                        <h4>All-in-One Planning</h4>
+                        <p>Rides, dining, activities, and stays — everything in a single app.</p>
+                    </div>
+                </div>
+                
+                <div class="why-point">
+                    <span class="number">04.</span>
+                    <div class="content">
+                        <h4>Smarter Decisions</h4>
+                        <p>Stop juggling apps. Make confident choices with complete information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- READY TO HOP ON -->
+    <section class="ready" id="ready">
+        <div class="container ready-box">
+            <div class="ready-logo">
+                <img src="./assets/brand/hopwise-logo-cropped.png" alt="Hopwise">
+            </div>
+            
+            <h2>Ready to Hop on?</h2>
+            <p>Be among the first to experience smarter travel decisions.</p>
+            
+            <form class="ready-form" action="https://formspree.io/f/xrbnlzoa" method="POST">
+                <input type="email" name="email" placeholder="you@example.com" required>
+                <button type="submit">Join waitlist</button>
+            </form>
+        </div>
+    </section>
 
-<!-- PRODUCT PREVIEW -->
-<section class="section section--soft">
-  <div class="container">
-    <h2 class="center">This is what smarter travel looks like</h2>
-    <div class="preview">
-      <div class="placeholder">
-        App preview placeholder<br />
-        <small>(Drop screenshot later)</small>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- FOOTER -->
+    <footer class="footer">
+        © <span id="year">2024</span> Hopwise. Every stop matters. Hop smarter!
+    </footer>
 
-<!-- HOW IT WORKS -->
-<section class="section">
-  <div class="container">
-    <div class="how">
-      <span>Search</span>
-      <span>→</span>
-      <span>Compare</span>
-      <span>→</span>
-      <span>Smart Pick</span>
-      <span>→</span>
-      <span>Book</span>
-    </div>
-  </div>
-</section>
+    <!-- Scripts -->
+    <script src="./js/script.js"></script>
 
-<!-- WAITLIST -->
-<section class="section section--soft" id="waitlist">
-  <div class="container waitlist">
-    <h2>Be first to hop smarter ✨</h2>
-    <p>No spam. Just smarter travel.</p>
-
-    <form id="waitlistForm">
-      <input type="email" id="email" placeholder="you@example.com" required />
-      <button class="btn btn--primary">Join waitlist</button>
-      <div class="form-msg" id="formMsg"></div>
-    </form>
-  </div>
-</section>
-
-</main>
-
-<footer class="footer">
-  © <span id="year"></span> Hopwise
-</footer>
-
-<script src="./js/script.js"></script>
 </body>
 </html>
